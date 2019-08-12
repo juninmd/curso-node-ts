@@ -37,12 +37,37 @@ cat > tsconfig.json
 ```
 {
   "compilerOptions": {
-    "outDir": "./dist",
+    "incremental": true,
+    "baseUrl": "./",
+    "outDir": "dist",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "stripInternal": true,
+    "target": "es5",
     "module": "commonjs",
-    "noImplicitAny": true,
-    "removeComments": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
     "preserveConstEnums": true,
-    "sourceMap": true
+    "removeComments": true,
+    "sourceMap": true,
+    "strict": false,
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "typeRoots": [
+      "node_modules/@types",
+    ],
   },
   "include": [
     "src/**/*"
