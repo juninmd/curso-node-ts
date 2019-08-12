@@ -21,26 +21,28 @@ Aula 1
 
 * Montando ambiente
 * Conhecendo um pouco sobre JavaScript / TypeScript
-* Palavras Reservadas 
+* Palavras Reservadas
 * Objetos, Propriedades e Métodos
 * Regras de Ouro (EcmaScript 6)
 * Funções
 * Operadores / Operadores Lógicos
 * Comparação
-* Condição Ternária 
+* Condição Ternária
+* Callbacks
+* Promises
+* Promises com async/await
 ---
 
 Aula 2
 > Tópicos Abordados
 
-* Tratativas de erro
 * Conhecendo o npm
 * Diferença entre projeto local/global
+* Conhecendo melhor o TypeScript
+* Tratativas de erro
 * Trabalhando com variáveis de ambiente [dotEnv]
 * Entendendo como utilizar rest (verbos [get/post/put/delete/path])
-* Callbacks
-* Promises
-* Promises com async/await
+
 ---
 
 Aula 3
@@ -58,7 +60,7 @@ Aula 4
 
 * Criando parsers
 * Simulando regras de negócio
-* Finalizando o crud 
+* Finalizando o crud
 * Publicando no teresa
 * Configurando o gitlab-ci
 
