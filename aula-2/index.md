@@ -85,3 +85,5 @@ https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
 ```bash
 $ npm i -g gign
 ```
+
+> https://github.com/goldbergyoni/nodebestpractices/blob/master/README.brazilian-portuguese.md
