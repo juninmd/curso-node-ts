@@ -3,9 +3,9 @@ import * as path from 'path';
 import * as express from 'express';
 import { getPeople } from './star-wars.api';
 
-const caminho = path.resolve(__dirname, '../') + '/.env';
+const envsPath = path.resolve(__dirname, '../') + '/.env';
 try {
-  dotEnv.config({ path: caminho });
+  dotEnv.config({ path: envsPath });
 } catch (error) {
   console.log(error)
 }
@@ -17,10 +17,10 @@ app.get('/people/:id', async (req: express.Request, res: express.Response, ) => 
     const people = await getPeople(req.params.id);
     res.send(people).status(200);
   } catch (error) {
-    res.send({ error: 'Ocorreu uma falha' }).status(500);
+   res.send({ message: 'Ocorreu uma falha', details: error.stack, error: error.message }).status(500);
   }
 })
 
-app.listen(8000, () => {
+app.listen(process.env.PORT || 8000, () => {
   console.log('Api rodando :) http://localhost:8000')
 })
